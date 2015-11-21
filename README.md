@@ -1,5 +1,5 @@
 # Copy Path Coordinates
-Copy slected path's coordinates to clipboard.
+Copy coordinates of selected path to clipboard.
 
 ## Installation
 
