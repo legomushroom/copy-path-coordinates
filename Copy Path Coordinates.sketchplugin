@@ -9,7 +9,7 @@ var selection = context.selection;
 var layer   = selection[0].layers().objectAtIndex(0),
     rect    = [[layer frame] rect],
     bezier  = [layer bezierPathInRect:rect],
-    svg     = [bezier svgAttributes][0] + '';
-
-var str = copy_text( svg.split('"')[1] );
+    svg     = [bezier svgPathAttribute] + '',
+    str     = copy_text( svg.split('"')[1] );
+    
 [doc showMessage: "SVG path coordinates copied to clipboard"];
